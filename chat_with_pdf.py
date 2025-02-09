@@ -46,22 +46,6 @@ if pdf_docs:
         vector_store = get_vector_store(text_chunks)
         vector_store.save_local("faiss_index")
 
-# Create a scrollable container using CSS
-# scrollable_container = """
-#     <style>
-#     .scrollable-div {
-#         height: 400px;
-#         overflow-y: auto;
-#         border: 1px solid #ddd;
-#         padding: 10px;
-#     }
-#     </style>
-# """
-# st.markdown(scrollable_container, unsafe_allow_html=True)
-
-# Display chat history
-# with st.container():
-
 # Create conversation with PDF
 user_question = st.text_input("Ask a Question from the uploaded file")
 

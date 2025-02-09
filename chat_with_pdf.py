@@ -59,6 +59,5 @@ if vector_store:
         st.session_state.chat_history.append((user_question, response))        
 
     for question, answer in st.session_state.chat_history:
-        # out_text = '<div class="scrollable-div">' + f"**You:** {question}" + "\n|" + f"**Bot:** {answer}" + '</div>'
         st.markdown(f"**You:** {question}")        
         st.markdown(f"**Bot:** {answer}")
